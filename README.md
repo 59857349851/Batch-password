@@ -16,22 +16,22 @@ The provided batch script is a simple login system designed to prompt the user f
 
 Please note that this is a basic login system and not suitable for secure applications. It is intended for educational purposes only.
 
-!!!Warning: This script is intended solely for educational and demonstration purposes. The author assumes no responsibility for any potential losses, damages, or issues arising from the use of this script. You are using it at your own risk and responsibility.
+!!! Warning: This script is intended solely for educational and demonstration purposes. The author assumes no responsibility for any potential losses, damages, or issues arising from the use of this script. You are using it at your own risk and responsibility.
 The batch script presented earlier is merely a demonstration and should not be used in production environments or applications requiring security. Its sole purpose is to showcase basic batch language mechanisms. For actual login or security system implementations, it is necessary to employ more advanced and secure methods. The author of this script does not take responsibility for any potential negative consequences resulting from its use.
 
 -------------
 
 Ten skrypt batchowy służy do stworzenia prostego systemu logowania. Oto jego działanie:
 
-Ustawia tryb konsoli na 30 kolumn i 10 wierszy.
-Inicjuje zmienną cos na 4 i zmienną czasWylogowania_w_sec na 120 (czas w sekundach dla automatycznego wylogowania).
-Skrypt wchodzi w pętlę oznaczoną etykietą :start.
-Czyści ekran i ustawia kolor konsoli na 09 (niebieski).
-Prosi użytkownika o wprowadzenie nazwy logowania i zapisuje ją w zmiennej Nazwa.
-Następnie uruchamia polecenie PowerShell za pomocą narzędzia powershell, aby bezpiecznie poprosić użytkownika o wprowadzenie hasła. Wprowadzone hasło jest zapisywane w zmiennej haslo.
-Jeśli nazwa logowania to "Admin", a hasło to "test123", skrypt przechodzi do etykiety :Tak. W przeciwnym razie zmniejsza wartość zmiennej cos o 1 i wyświetla komunikat o błędzie. Jeśli wartość cos osiągnie 0, skrypt przechodzi do :zmienna2.
-Jeśli logowanie i hasło są poprawne (etykieta :Tak), wyświetla komunikat o sukcesie i przechodzi do etykiety :menu.
-Sekcja :menu ustawia tryb konsoli na 190 kolumn i 90 wierszy, czyści ekran i wyświetla pewne opcje menu. Oczekuje na naciśnięcie dowolnego klawisza przed powrotem do etykiety :menu.
+1. Ustawia tryb konsoli na 30 kolumn i 10 wierszy.
+2. Inicjuje zmienną cos na 4 i zmienną czasWylogowania_w_sec na 120 (czas w sekundach dla automatycznego wylogowania).
+3. Skrypt wchodzi w pętlę oznaczoną etykietą :start.
+4. Czyści ekran i ustawia kolor konsoli na 09 (niebieski).
+5. Prosi użytkownika o wprowadzenie nazwy logowania i zapisuje ją w zmiennej Nazwa.
+6. Następnie uruchamia polecenie PowerShell za pomocą narzędzia powershell, aby bezpiecznie poprosić użytkownika o wprowadzenie hasła. Wprowadzone hasło jest zapisywane w zmiennej haslo.
+7. Jeśli nazwa logowania to "Admin", a hasło to "test123", skrypt przechodzi do etykiety :Tak. W przeciwnym razie zmniejsza wartość zmiennej cos o 1 i wyświetla komunikat o błędzie. Jeśli wartość cos osiągnie 0, skrypt przechodzi do :zmienna2.
+8. Jeśli logowanie i hasło są poprawne (etykieta :Tak), wyświetla komunikat o sukcesie i przechodzi do etykiety :menu.
+9. Sekcja :menu ustawia tryb konsoli na 190 kolumn i 90 wierszy, czyści ekran i wyświetla pewne opcje menu. Oczekuje na naciśnięcie dowolnego klawisza przed powrotem do etykiety :menu.
 
 Należy pamiętać, że jest to podstawowy system logowania i nie nadaje się do zastosowań bezpiecznych. Przeznaczony jest wyłącznie do celów edukacyjnych.
 
